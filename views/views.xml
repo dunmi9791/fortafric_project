@@ -26,6 +26,20 @@
                 </xpath>
             </field>
         </record>
+      <record id="view_partner_form_technical_assistant" model="ir.ui.view">
+        <field name="name">res.partner.form.technical.assistant</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='sales_purchases']" position="before">
+                <page string="Technical Assistant">
+                    <group>
+                        <field name="is_technical_assistant"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
     <!-- explicit list view definition -->
 <!--
     <record model="ir.ui.view" id="fortafric_projects.list">

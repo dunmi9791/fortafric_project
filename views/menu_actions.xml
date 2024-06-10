@@ -8,4 +8,14 @@
     <field name="domain">[('project_id', '=', active_id)]</field>
     <field name="context">{'default_project_id': active_id}</field>
 </record>
+    <record id="action_technical_assistant" model="ir.actions.act_window">
+        <field name="name">Technical Assistants</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_technical_assistant', '=', True)]</field>
+        <field name="context">{'default_is_technical_assistant': True}</field>
+    </record>
+    <menuitem id="menu_technical_assistant_root" name="Technical Assistants" parent="project.menu_project_config" sequence="1"/>
+    <menuitem id="menu_technical_assistant" name="Technical Assistants" parent="menu_technical_assistant_root" action="action_technical_assistant"/>
+
 </odoo>

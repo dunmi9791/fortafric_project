@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_fortafric_projects_fortafric_projects,fortafric_projects.fortafric_projects,model_fortafric_projects_fortafric_projects,base.group_user,1,1,1,1
+access_res_partner_technical_assistant,access_res_partner_technical_assistant,model_res_partner,base.group_user,1,1,1,1

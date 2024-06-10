@@ -22,3 +22,9 @@ class ProjectProject(models.Model):
     def _compute_purchase_count(self):
         for project in self:
             project.purchase_count = len(project.purchase_ids)
+
+
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
+
+    is_technical_assistant = fields.Boolean(string='Technical Assistant', default=False)
