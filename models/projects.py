@@ -24,7 +24,7 @@ class ProjectProject(models.Model):
             project.purchase_count = len(project.purchase_ids)
 
 
-class ResPartner(models.Model):
-    _inherit = 'res.partner'
-
-    is_technical_assistant = fields.Boolean(string='Technical Assistant', default=False)
+# class ResPartner(models.Model):
+#     _inherit = 'res.partner'
+#
+#     is_technical_assistant = fields.Boolean(string='Technical Assistant', default=False)
